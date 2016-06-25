@@ -31,14 +31,23 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
 }
+.main a:hover{
+    background-color: rgb(96, 190, 41);
+}
 .main a:focus{
     outline: none;
 }
 .main a.info{
     background-color: rgb(38, 198, 218);
 }
+.main a.info:hover{
+    background-color: rgb(0, 172, 194);
+}
 .main a.great{
     background-color: rgb(250, 196, 80);
+}
+.main a.great:hover{
+    background-color: rgb(217, 180, 22);
 }
 .main h3{
     font-size: 1.8rem;
