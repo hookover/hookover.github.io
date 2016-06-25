@@ -1,15 +1,16 @@
 body,html,h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
+    color: #fff;
     font-size: 15px;
     font-weight: 200;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body{
-    background: #472E32;
+    background-color: #472E32;
 }
 .main{
-    background: #ffffff;
+    background: rgba(255, 255, 255,0.05);
     margin: 10% auto;
     width: 35rem;
     height: 20rem;
@@ -19,16 +20,25 @@ body{
     position: relative;
 }
 .main .target{
-    line-height: 20rem;
+    line-height: 22rem;
 }
 .main a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
-    background: #472E32;
+    background-color: rgb(112, 212, 69);
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
+}
+.main a:focus{
+    outline: none;
+}
+.main a.info{
+    background-color: rgb(38, 198, 218);
+}
+.main a.great{
+    background-color: rgb(250, 196, 80);
 }
 .main h3{
     font-size: 1.8rem;
@@ -36,4 +46,17 @@ body{
     position: absolute;
     top: 25%;
     margin: 0 auto;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
 }
